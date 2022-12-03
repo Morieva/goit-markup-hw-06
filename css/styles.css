@@ -765,7 +765,7 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--second-text-color);
+  color: var(--text-on-dark-color);
   background: var(--accent-color);
   border-radius: 4px;
   border: 0 solid transparent;
