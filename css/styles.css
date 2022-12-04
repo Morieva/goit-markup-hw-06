@@ -606,6 +606,8 @@ img {
   line-height: 1.87;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+  border: none;
 }
 .newsletter-button:active,
 .newsletter-button:hover,
@@ -633,7 +635,6 @@ img {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -651,6 +652,11 @@ img {
   align-items: center;
   justify-content: center;
   background-color: var(--background-main-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--accent-color);
 }
 .backdrop.is-hidden {
   pointer-events: none;
@@ -697,6 +703,9 @@ img {
 }
 .form-field:focus {
   outline-color: var(--accent-color);
+}
+.form-field:focus + .form-icon {
+  fill: var(--accent-color);
 }
 .form-icon {
   position: absolute;
@@ -748,9 +757,8 @@ img {
 }
 
 .checkbox:checked + .checkbox-icon {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  background-image: url(../images/vector.svg);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
