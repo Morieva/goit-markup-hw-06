@@ -755,20 +755,13 @@ img {
   border: 2px solid var(--filter-text);
   border-radius: 4px;
   margin-right: 7px;
+  fill: var(--background-main-color);
 }
 
-.checkbox:checked + .checkbox-icon {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  background-image: url(./images/icons.svg#icon-checkbox);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-origin: border-box;
-}
 .checkbox-icon:active {
   background-color: var(--accent-color);
   fill: var(--text-on-dark-color);
+  border: none;
 }
 .contract {
   text-decoration-line: underline;
